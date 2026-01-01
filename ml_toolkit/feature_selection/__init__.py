@@ -8,7 +8,6 @@ This module provides tools for:
 - Per-group NaN handling
 """
 
-# Future imports will be added as modules are implemented
-# from .feature_group_analyzer import FeatureGroupAnalyzer
-# from .mutual_information import calculate_mutual_information
-# from .importance_analysis import analyze_feature_importance
+from .feature_group_analyzer import FeatureGroupAnalyzer
+
+__all__ = ['FeatureGroupAnalyzer']

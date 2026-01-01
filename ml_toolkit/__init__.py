@@ -11,9 +11,25 @@ This package provides modular, strategy-agnostic utilities for:
 
 __version__ = "0.1.0"
 
-# Import submodules will be added as they are implemented
-# from .feature_selection import *
-# from .model_evaluation import *
-# from .hyperparameter_tuning import *
-# from .sample_weighting import *
-# from .ensemble import *
+# Core modules
+from . import feature_selection
+from . import model_evaluation
+from . import sample_weighting
+
+# Convenience imports
+from .feature_selection import FeatureGroupAnalyzer
+from .model_evaluation import BucketAnalyzer
+from .sample_weighting import (
+    calculate_alpha_squared_weights,
+    calculate_sample_weights
+)
+
+__all__ = [
+    'feature_selection',
+    'model_evaluation',
+    'sample_weighting',
+    'FeatureGroupAnalyzer',
+    'BucketAnalyzer',
+    'calculate_alpha_squared_weights',
+    'calculate_sample_weights'
+]

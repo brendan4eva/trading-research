@@ -8,7 +8,6 @@ This module provides tools for:
 - Baseline comparison
 """
 
-# Future imports will be added as modules are implemented
-# from .bucket_analyzer import BucketAnalyzer
-# from .performance_metrics import PerformanceMetrics
-# from .time_series_cv import TimeSeriesCV
+from .bucket_analyzer import BucketAnalyzer
+
+__all__ = ['BucketAnalyzer']

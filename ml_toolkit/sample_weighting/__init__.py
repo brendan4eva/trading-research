@@ -7,7 +7,16 @@ This module provides tools for:
 - Custom weight calculators
 """
 
-# Future imports will be added as modules are implemented
-# from .alpha_squared import calculate_alpha_squared_weights
-# from .magnitude_weighting import calculate_magnitude_weights
-# from .base import BaseWeightCalculator
+from .alpha_squared import (
+    calculate_alpha_squared_weights,
+    calculate_magnitude_weights,
+    calculate_sample_weights,
+    print_weight_stats
+)
+
+__all__ = [
+    'calculate_alpha_squared_weights',
+    'calculate_magnitude_weights',
+    'calculate_sample_weights',
+    'print_weight_stats'
+]
